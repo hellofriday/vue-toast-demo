@@ -85,6 +85,6 @@ module.exports = {
     host:'0.0.0.0',
     open: false,
     disableHostCheck: true,
-    hot: true //是否开启热更，调试html时候关闭，调试css与js开启
+    hot: true //是否开启热更，调试html时候关闭，因为html跟入口文件没有依赖关系，webpack-dev-server在监听webpack打包的文件的时候监听不到。调试css与js可以被监听到所以开启。
   }
 }
