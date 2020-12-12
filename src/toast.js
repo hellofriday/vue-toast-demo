@@ -1,5 +1,5 @@
 import toast from './pages/toast.vue'
-export default {
+export default {V
     install(Vue) {
         let toastComponent = Vue.extend(toast)
         const vm = new toastComponent(
